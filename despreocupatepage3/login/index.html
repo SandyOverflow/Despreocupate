@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+
+    <div class="contenedor-app">
+        <header class="cabecera">
+            <h1>Iniciar sesión</h1>
+        </header>
+
+        <main class="contenido">
+            <div class="caja-blanca">
+                <b>¡Bienvenido/a!</b><br>
+                Inicia sesión para continuar
+            </div>
+
+            <form onsubmit="iniciarSesion(event)">
+                <div class="grupo-columna">
+                    <label for="correo">Correo electrónico</label>
+                    <div class="contenedor-input input-con-icono">
+                        <span class="icono-usuario"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></span>
+                        <input type="email" id="correo" placeholder="Introduce tu correo electrónico" required>
+                    </div>
+                </div>
+
+                <div class="grupo-columna">
+                    <label for="contrasena">Contraseña</label>
+                    <div class="contenedor-input input-con-icono">
+                        <input type="password" id="contrasena" placeholder="Introduce tu contraseña" required>
+                        <span class="icono-toggle" onclick="togglePassword('contrasena', this)"></span>
+                    </div>
+                </div>
+
+                
+                <a class="enlace-olvido" href="#">¿Has olvidado tu contraseña?</a>
+
+                <button type="submit" class="boton-principal">Iniciar sesión</button>
+            </form>
+
+            <p class="texto-pie">
+                ¿No tienes una cuenta?<br><br>
+                <a href="../registro/index.html">Regístrate</a>
+            </p>
+        </main>
+    </div>
+
+</body>
+</html>

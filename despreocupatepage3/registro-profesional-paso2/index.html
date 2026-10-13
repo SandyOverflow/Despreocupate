@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de profesional</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+
+    <div class="contenedor-app">
+        <header class="cabecera">
+            <h1>Registro de profesional</h1>
+        </header>
+
+        <main class="contenido">
+            <h2>Datos profesionales</h2>
+
+            <form onsubmit="registrarProfesional(event)">
+                <div class="grupo-formulario">
+                    <label for="especialidad">Especialidad</label>
+                    <div class="contenedor-input">
+                        <select id="especialidad" required>
+                            <option value="">Selecciona</option>
+                            <option>Medicina general</option>
+                            <option>Psicología</option>
+                            <option>Fisioterapia</option>
+                            <option>Nutrición</option>
+                            <option>Entrenamiento</option>
+                            <option>Otras</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="colegiado">Número de<br>colegiado</label>
+                    <div class="contenedor-input">
+                        <input type="text" id="colegiado" required>
+                    </div>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="experiencia">Años de<br>experiencia</label>
+                    <div class="contenedor-input">
+                        <input type="number" id="experiencia" required min="0">
+                    </div>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="ciudad">Ciudad</label>
+                    <div class="contenedor-input">
+                        <input type="text" id="ciudad" required>
+                    </div>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="documento">Documento<br>acreditativo</label>
+                    <div class="contenedor-input">
+                        <input type="file" id="documento" required accept=".pdf,.jpg,.jpeg,.png">
+                    </div>
+                </div>
+
+                <label class="terminos">
+                    <input type="checkbox" required>
+                    Acepto los términos y condiciones y la política de privacidad
+                </label>
+
+                <button type="submit" class="boton-continuar">Crear cuenta</button>
+            </form>
+        </main>
+    </div>
+
+</body>
+</html>
