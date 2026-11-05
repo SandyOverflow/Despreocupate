@@ -27,18 +27,18 @@ DesPreocúpate es una plataforma digital diseñada para conectar en un mismo ent
 ## Funcionalidades Principales
 
 ### Para Pacientes
-- Registro y Perfil Personalizado: Módulo de alta con registro de datos personales y número de tarjeta sanitaria[cite: 4].
-- Búsqueda por Especialidad: Catálogo estructurado para explorar perfiles en Psicología, Nutrición, Fisioterapia y Entrenamiento[cite: 7, 10].
-- Reserva y Pago Integrado: Selección de especialista por tarifa y valoración, elección de fecha/hora y procesamiento de pago seguro[cite: 8, 12, 13].
-- Gestión de Citas y Sesiones: Confirmación de agenda, opción de reagendamiento y acceso directo a videollamadas[cite: 14, 15].
-- Historial de Bienestar Unificado: Seguimiento de métricas clave, registro de objetivos y descarga de informes de evolución en formato PDF[cite: 18].
+- Registro y Perfil Personalizado: Módulo de alta con registro de datos personales y número de tarjeta sanitaria.
+- Búsqueda por Especialidad: Catálogo estructurado para explorar perfiles en Psicología, Nutrición, Fisioterapia y Entrenamiento.
+- Reserva y Pago Integrado: Selección de especialista por tarifa y valoración, elección de fecha/hora y procesamiento de pago seguro.
+- Gestión de Citas y Sesiones: Confirmación de agenda, opción de reagendamiento y acceso directo a videollamadas.
+- Historial de Bienestar Unificado: Seguimiento de métricas clave, registro de objetivos y descarga de informes de evolución en formato PDF.
 
 ### Para Profesionales
-- Registro y Verificación: Proceso de validación mediante número de colegiado, años de experiencia y documentación acreditativa[cite: 6].
-- Panel de Control (Dashboard): Vista unificada de las consultas del día, modalid de atención (presencial u online) y preparación de sesiones[cite: 19].
-- Gestión de Agenda: Calendario para la administración de horarios y bloqueo de disponibilidad[cite: 20].
-- Expediente Clínico de Pacientes: Módulo de seguimiento con lista de pacientes, historiales y evolución de tratamientos[cite: 21].
-- Sistema de Valoraciones: Gestión de reseñas y puntuaciones otorgadas por los usuarios para fortalecer la credibilidad profesional[cite: 22].
+- Registro y Verificación: Proceso de validación mediante número de colegiado, años de experiencia y documentación acreditativa.
+- Panel de Control (Dashboard): Vista unificada de las consultas del día, modalid de atención (presencial u online) y preparación de sesiones.
+- Gestión de Agenda: Calendario para la administración de horarios y bloqueo de disponibilidad.
+- Expediente Clínico de Pacientes: Módulo de seguimiento con lista de pacientes, historiales y evolución de tratamientos.
+- Sistema de Valoraciones: Gestión de reseñas y puntuaciones otorgadas por los usuarios para fortalecer la credibilidad profesional.
 
 ---
 
