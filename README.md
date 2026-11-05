@@ -1,4 +1,4 @@
-# Despreocupate
+# Despreocúpate
 
 Plataforma digital integral y ecosistema multidisciplinar de salud y bienestar.
 
@@ -6,7 +6,7 @@ Plataforma digital integral y ecosistema multidisciplinar de salud y bienestar.
 
 ## Descripción del Proyecto
 
-DesPreocupate es una plataforma digital diseñada para conectar en un mismo entorno a usuarios y pacientes con profesionales de la salud y el bienestar, abarcando áreas como psicología, nutrición, fisioterapia y entrenamiento personal. El proyecto aborda la atención sanitaria y el cuidado personal desde una perspectiva global orientada a tres pilares: cuerpo, mente y hábitos.
+DesPreocúpate es una plataforma digital diseñada para conectar en un mismo entorno a usuarios y pacientes con profesionales de la salud y el bienestar, abarcando áreas como psicología, nutrición, fisioterapia y entrenamiento personal. El proyecto aborda la atención sanitaria y el cuidado personal desde una perspectiva global orientada a tres pilares: cuerpo, mente y hábitos.
 
 ### Problema que resuelve
 
