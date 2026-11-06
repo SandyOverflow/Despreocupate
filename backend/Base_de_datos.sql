@@ -20,6 +20,8 @@ CREATE TABLE PACIENTE (
     fecha_nacimiento DATE,
     genero VARCHAR(30),
     objetivos_bienestar TEXT,
+    tarjeta_sanitaria VARCHAR(30),      
+    codigo_postal VARCHAR(5),           
     FOREIGN KEY (id_usuario) REFERENCES USUARIO(id_usuario) ON DELETE CASCADE
 ) ENGINE=InnoDB;
 
@@ -32,6 +34,10 @@ CREATE TABLE PROFESIONAL (
     titulacion VARCHAR(100),
     descripcion TEXT,
     verificado BOOLEAN DEFAULT FALSE,
+    anyos_experiencia INT DEFAULT 0,                    
+    ciudad VARCHAR(100),                                
+    precio_hora DECIMAL(6,2) NOT NULL DEFAULT 50.00,    
+    documento_acreditativo VARCHAR(255),                
     FOREIGN KEY (id_usuario) REFERENCES USUARIO(id_usuario) ON DELETE CASCADE
 ) ENGINE=InnoDB;
 
@@ -44,6 +50,7 @@ CREATE TABLE CITA (
     hora TIME NOT NULL,
     observaciones TEXT,
     estado ENUM('pendiente', 'confirmada', 'cancelada', 'finalizada') DEFAULT 'pendiente',
+    tipo ENUM('online', 'presencial') NOT NULL DEFAULT 'online',    -- Pantalla "Detalles de cita"
     FOREIGN KEY (id_paciente) REFERENCES PACIENTE(id_paciente),
     FOREIGN KEY (id_profesional) REFERENCES PROFESIONAL(id_profesional)
 ) ENGINE=InnoDB;
@@ -95,16 +102,17 @@ CREATE TABLE MENSAJE (
     contenido TEXT NOT NULL,
     fecha_envio DATETIME DEFAULT CURRENT_TIMESTAMP,
     leido BOOLEAN DEFAULT FALSE,
+    emisor ENUM('paciente', 'profesional') NOT NULL DEFAULT 'paciente',  
     FOREIGN KEY (id_paciente) REFERENCES PACIENTE(id_paciente),
     FOREIGN KEY (id_profesional) REFERENCES PROFESIONAL(id_profesional)
 ) ENGINE=InnoDB;
 
--- 9. Tabla VALORACIÓN
+-- 9. Tabla VALORACION
 CREATE TABLE VALORACION (
     id_valoracion INT AUTO_INCREMENT PRIMARY KEY,
     id_paciente INT NOT NULL,
     id_profesional INT NOT NULL,
-    puntuacion INT CHECK (puntuación BETWEEN 1 AND 5),
+    puntuacion INT CHECK (puntuacion BETWEEN 1 AND 5),    
     comentario TEXT,
     fecha DATE,
     FOREIGN KEY (id_paciente) REFERENCES PACIENTE(id_paciente),
